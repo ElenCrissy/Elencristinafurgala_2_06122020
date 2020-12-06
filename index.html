@@ -11,9 +11,30 @@
     <body>
         
         <header>
+            <h1>
+                <a href="#">
+                    <img src="#" alt="reservia" />
+                </a>
+            </h1>
+            
+            <nav>
+                <a href="#hebergement">Hébergement</a>
+                <a href="#activites">Activités</a>
+                <a href="#">S'inscrire</a> <!-- Vérifier découpage maquette -->
+            </nav>
         </header>
         
         <section>
+            <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
+            <p>En plein centre ville ou en pleine nature</p>
+            
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="location"><img src="" alt="icon_location"/></label> <!-- icone-->
+                    <input type="text" name="location" id="location" placeholder="Marseille, France" /> <input type="button" value="Rechercher" />
+                </p>
+            </form>
+        
         </section>
         
         <section>
@@ -23,6 +44,36 @@
         </section>
 
         <footer>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col">
+                        <h2>A propos</h2>
+                        <ul>
+                            <li>Fonctionnement du site</li>
+                            <li>Conditions générales de vente</li>
+                            <li>Données et confidentialité</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col">
+                        <h2>Nos hébergements</h2>
+                        <ul>
+                            <li>Charte de qualité</li>
+                            <li>Soumettre votre hôtel</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col">
+                        <h2>Assistance</h2>
+                        <ul>
+                            <li>Centre d'aide</li>
+                            <li>Nous contacter</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
         </footer>
 
     </body>
