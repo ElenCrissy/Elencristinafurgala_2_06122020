@@ -1,0 +1,172 @@
+/* Polices d'écriture */
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('raleway/raleway-bold-webfont.woff2') format('woff2'),
+         url('police_raleway/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url('police_raleway/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+}
+
+/* Eléments généraux */ /* raleway ne fonctionne pas */
+
+body
+{
+    font-family: 'ralewayregular', comic sans ms, sans-serif;
+}
+
+body
+{
+    width: 100%;
+}
+
+#contenu
+{
+    width: 90%;
+    margin: auto;
+}
+
+i
+{
+    color: #0065FC;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+
+
+/* Header */
+
+header
+{
+    display: flex;
+}
+
+#logoreservia
+{
+    width: 40%;
+}
+
+.actions
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+nav a
+{
+    margin-right: 30px;
+}
+
+nav a:hover
+{
+    border-top: 1px solid;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+#inscription
+{
+    font-weight: bold;
+    color: #0065FC;
+}
+
+
+
+
+
+
+
+
+
+
+/* Section1 */
+
+span
+{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+
+#location
+{
+    height: 40px;
+    border: 1px;
+    border-color: #F2F2F2;
+    margin-right: 0px;
+    
+}
+
+.button
+{
+    background-color: #0065FC;
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    height: 40px;
+    text-align: center;
+    margin-left: 0;
+}
+
+
+
+/* Section2 */
+
+
+
+
+
+
+/* Section3 */
+
+
+
+
+
+
+
+/* Footer */
+
+footer
+{
+    background-color: #F2F2F2;
+    width: 100%;
+    margin: 0;
+}
+
+
+
+
+
+
+
