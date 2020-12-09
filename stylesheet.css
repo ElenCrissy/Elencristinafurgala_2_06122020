@@ -44,8 +44,12 @@ header
 
 #header_largescreens
 {
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 #nav_mobile
@@ -66,6 +70,7 @@ header
 
 nav
 {
+    height: 50px;
     margin-right: 20px;
     display: flex;
     justify-content: flex-end;
@@ -118,7 +123,7 @@ span
     margin-top: 5px;
 }
 
-/* ----- Formulaire */
+/* Section1 ----- Formulaire */
 
 form p
 {
@@ -160,7 +165,7 @@ form p
 }
 
 
-/* ----- Filtre */
+/* Section1 ----- Filtre */
 
 .filtres
 {
@@ -189,6 +194,7 @@ form p
 {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 #disponibilite i
@@ -213,14 +219,197 @@ form p
 #section2
 {
     width: 100%;
+    height: 500px;
     display: flex;
+    justify-content: space-around;
+}
+
+#section2 h2
+{
+    font-size: 1.1em;
+    margin-top: 20px;
+
+}
+
+#section2_article, aside
+{
+    background-color: #F2F2F2;
+    border-radius: 25px;
+}
+
+/* Section2 ----- Article */
+
+#section2_article
+{
+    width: 67%;
+}
+
+
+#section2_article_hebergement
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 80%;
+}
+
+#section2_article h2, #afficherplus
+{
+    margin-left: 20px;
+}
+
+
+.hebergement_element
+{
+    width: 28%;
+    height: 40%;
+    background-color: white;
+    border-radius: 25px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 5px lightgrey;
     
 }
 
-article /* attention, article section3 pris en compte ! */
+.hebergement_element a img
 {
-    background-color: #F2F2F2;
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
 }
+
+.hebergement_element_text
+{
+    height: 40%;
+    font-size: 0.8em;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hebergement_element_description h4
+{
+    margin-bottom: 3px;
+    margin-top: 8px;
+}
+
+.hebergement_element_description p
+{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.hebergement_stars
+{
+    margin-bottom: 7px;
+    font-size: 0.9em;
+}
+
+#afficherplus
+{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* Section2 ----- Aside */
+
+aside
+{
+    width: 28%;
+}
+
+#populaire
+{
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#populaire i
+{
+    color: black;
+    font-size: 15px;
+    display: flex;
+
+}
+
+#aside_group
+{
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside_element
+{
+    height: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.aside_element a
+{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: 4px solid white;
+    box-shadow: 0px 0px 5px lightgrey;
+}
+
+aside img
+{
+    width: 40%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    object-fit: cover;
+}
+
+.aside_element_text
+{
+    font-size: 0.8em;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside_element_description h4
+{
+    margin-bottom: 3px;
+    margin-top: 8px;
+}
+
+.aside_element_description p
+{
+    margin-top: 0px;
+}
+
+.stars
+{
+    margin-bottom: 7px;
+    font-size: 0.9em;
+}
+
+
+
+
 
 
 
@@ -233,7 +422,10 @@ article /* attention, article section3 pris en compte ! */
 
 /* Section3 */
 
-
+#section3 img
+{
+    width: 100px;
+}
 
 
 
