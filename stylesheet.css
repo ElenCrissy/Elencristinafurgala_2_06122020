@@ -1,38 +1,14 @@
-/* Polices d'écriture */
-
-@font-face {
-    font-family: 'ralewaybold';
-    src: url('raleway/raleway-bold-webfont.woff2') format('woff2'),
-         url('police_raleway/raleway-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'ralewayregular';
-    src: url('raleway/raleway-regular-webfont.woff2') format('woff2'),
-         url('police_raleway/raleway-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-}
-
-/* Eléments généraux */ /* raleway ne fonctionne pas */
+/* Eléments généraux */
 
 body
 {
-    font-family: 'ralewayregular', comic sans ms, sans-serif;
+    font-family: 'raleway', sans-serif;
 }
 
 body
 {
     width: 100%;
+    margin: 0;
 }
 
 #contenu
@@ -41,7 +17,7 @@ body
     margin: auto;
 }
 
-i
+i /* icones */
 {
     color: #0065FC;
 }
@@ -63,25 +39,46 @@ a:hover
 
 header
 {
+    margin-bottom: 20px;
+}
+
+#header_largescreens
+{
     display: flex;
+    justify-content: space-between;
+}
+
+#nav_mobile
+{
+    display: none;
+}
+
+#actions
+{
+    display: flex;
+    flex-direction: row;
 }
 
 #logoreservia
 {
-    width: 40%;
+    width: 25%;
 }
 
-.actions
+nav
 {
+    margin-right: 20px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-
 nav a
 {
-    margin-right: 30px;
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav a:hover
@@ -95,6 +92,8 @@ nav a:hover
 {
     font-weight: bold;
     color: #0065FC;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -114,33 +113,118 @@ span
     font-size: 1.2em;
 }
 
+#intro_section1 p
+{
+    margin-top: 5px;
+}
 
+/* ----- Formulaire */
+
+form p
+{
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+#iconlocation
+{
+    
+    color: black;
+    height: 40px;
+    margin-right: 0;
+    background-color: #F2F2F2;
+    vertical-align: middle;
+}
 
 #location
 {
-    height: 40px;
-    border: 1px;
+    height: 100%;
     border-color: #F2F2F2;
-    margin-right: 0px;
-    
+    margin-right: 0;
+    margin-left: 0;
+    font-family: 'raleway', sans-serif;
 }
 
 .button
 {
+    font-family: 'raleway', sans-serif;
     background-color: #0065FC;
     background-color: #0065FC;
     color: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border: none;
-    height: 40px;
+    height: 100%;
     text-align: center;
     margin-left: 0;
 }
 
 
+/* ----- Filtre */
+
+.filtres
+{
+    margin-bottom: 20px;
+}
+
+.filtres i
+{
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    text-align: center;
+    display: table-cell;
+}
+
+.filtres a
+{
+    border: 2px solid #F2F2F2;
+    border-radius: 10px;
+    height: 30px;
+}
+
+#disponibilite
+{
+    display: flex;
+    align-items: center;
+}
+
+#disponibilite i
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    border: 2px solid #F2F2F2;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
 
 /* Section2 */
+
+#section2
+{
+    width: 100%;
+    display: flex;
+    
+}
+
+article /* attention, article section3 pris en compte ! */
+{
+    background-color: #F2F2F2;
+}
+
+
+
+
 
 
 
@@ -155,6 +239,11 @@ span
 
 
 
+
+
+
+
+
 /* Footer */
 
 footer
@@ -162,7 +251,30 @@ footer
     background-color: #F2F2F2;
     width: 100%;
     margin: 0;
+    height: 180px;
+    font-size: 0.85em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.footer_element
+{
+    width: 32%;
+    padding-top: 20px;
+}
+
+.footer_element ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer_element ul li
+{
+    margin-bottom: 5px;
+}
+
 
 
 
