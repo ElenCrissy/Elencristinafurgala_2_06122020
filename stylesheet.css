@@ -273,7 +273,7 @@ form p
 
 .hebergement_element a img
 {
-    height: 50%;
+    height: 60%;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -293,7 +293,7 @@ form p
 .hebergement_element_description h4
 {
     margin-bottom: 3px;
-    margin-top: 8px;
+    margin-top: 0px;
 }
 
 .hebergement_element_description p
@@ -415,11 +415,6 @@ aside img
 
 
 
-
-
-
-
-
 /* Section3 */
 
 #section3 img
@@ -444,9 +439,8 @@ footer
     width: 100%;
     margin: 0;
     height: 180px;
-    font-size: 0.85em;
+    font-size: 0.80em;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 

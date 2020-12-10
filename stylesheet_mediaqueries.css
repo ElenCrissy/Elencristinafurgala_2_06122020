@@ -3,12 +3,21 @@
 @media screen and (max-width: 768px)
 {
     
-    #contenu
+    body
     {
         width: 100%;
     }
     
+    #contenu
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
     /* Header */
+    
+    header
     
     #header_largescreens
     {
@@ -52,10 +61,11 @@
     
     
     
-    /* Section 2 
+    /* Section 2 */
     
     #section2
     {
+        height: 1060px;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -71,7 +81,31 @@
         background-color: white;
     }
     
-    */
+    
+    
+    
+    
+    
+    
+    /* Footer */
+    
+    footer
+    {
+        
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer_element
+    {
+        width: 100%;
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
     
     
     
