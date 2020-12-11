@@ -3,13 +3,12 @@
 body
 {
     font-family: 'raleway', sans-serif;
-}
-
-body
-{
     width: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
+
 
 #contenu
 {
@@ -32,6 +31,9 @@ a:hover
 {
     text-decoration: none;
 }
+
+
+
 
 
 
@@ -219,9 +221,10 @@ form p
 #section2
 {
     width: 100%;
-    height: 500px;
+    height: auto;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 30px;
 }
 
 #section2 h2
@@ -417,13 +420,52 @@ aside img
 
 /* Section3 */
 
-#section3 img
+#section3
 {
-    width: 100px;
+    height: auto;
+    margin-bottom: 30px;
 }
 
+#section3_activites
+{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.activites_element
+{
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+}
 
+.activites_element a
+{
+    width: 85%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px lightgrey;
+}
+
+.activites_element h4
+{
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.activites_element img
+{
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
 
 
 
