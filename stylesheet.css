@@ -133,6 +133,7 @@ form p
     margin-bottom: 20px;
 }
 
+
 #iconlocation
 {
     
@@ -169,27 +170,36 @@ form p
 
 /* Section1 ----- Filtre */
 
-.filtres
+#filtres
 {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
-.filtres i
+.filtres_categories
 {
+    
+    margin-left: 30px;
+    border: 3px solid #F2F2F2;
+    border-radius: 25px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.filtres_categories i
+{
+    height: 100%;
     vertical-align: middle;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: #DEEBFF;
     border-radius: 100%;
     text-align: center;
     display: table-cell;
-}
-
-.filtres a
-{
-    border: 2px solid #F2F2F2;
-    border-radius: 10px;
-    height: 30px;
+    font-size: 1.2em;
 }
 
 #disponibilite
@@ -422,45 +432,69 @@ aside img
 
 #section3
 {
-    height: auto;
     margin-bottom: 30px;
 }
 
 #section3_activites
 {
-    height: 100%;
+    height: 400px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .activites_element
 {
     width: 23%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-size: 0.9em;
-}
-
-.activites_element a
-{
-    width: 85%;
-    border-radius: 25px;
-    box-shadow: 0px 0px 5px lightgrey;
 }
 
 .activites_element h4
 {
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin: 5% 0 0 6%;
 }
 
-.activites_element img
+.element_seul
 {
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px lightgrey;
+}
+
+.element_seul img
+{
+    height: 88%;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
+
+.element_duo
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.element_duo_individuel
+{
+    height: 47%;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px lightgrey;
+}
+
+.element_duo_individuel a
+{
+    height: 60%;
+}
+
+
+.element_duo_individuel img
+{
+    height: 75%;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
