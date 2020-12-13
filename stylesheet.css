@@ -67,7 +67,7 @@ header
 
 #logoreservia
 {
-    width: 25%;
+    width: 110px;
 }
 
 nav
@@ -75,13 +75,12 @@ nav
     height: 50px;
     margin-right: 20px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
 nav a
 {
-    height: 100%;
+    height: 200%;
     width: 150px;
     display: flex;
     align-items: center;
@@ -90,7 +89,7 @@ nav a
 
 nav a:hover
 {
-    border-top: 1px solid;
+    border-top: 1.5px solid;
     color: #0065FC;
     font-weight: bold;
 }
@@ -131,40 +130,58 @@ form p
 {
     height: 40px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 
 
 #iconlocation
 {
-    
     color: black;
-    height: 40px;
-    margin-right: 0;
     background-color: #F2F2F2;
-    vertical-align: middle;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
 #location
 {
-    height: 100%;
+    padding-left: 10px;
+    border: solid;
     border-color: #F2F2F2;
-    margin-right: 0;
-    margin-left: 0;
+    border-right: none;
     font-family: 'raleway', sans-serif;
+}
+
+::placeholder
+{
+    color: black;
+    font-weight: bold;
 }
 
 .button
 {
+    height: 100%;
     font-family: 'raleway', sans-serif;
+    font-weight: bold;
     background-color: #0065FC;
     background-color: #0065FC;
     color: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border: none;
-    height: 100%;
     text-align: center;
     margin-left: 0;
+    padding: 10px 10px 10px 10px;
+}
+
+.button:hover
+{
+    background-color: #134fab;
 }
 
 
@@ -172,16 +189,29 @@ form p
 
 #filtres
 {
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#filtres_categories
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 .filtres_categories
 {
     
     margin-left: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     border: 3px solid #F2F2F2;
     border-radius: 25px;
     padding-right: 10px;
@@ -231,9 +261,9 @@ form p
 #section2
 {
     width: 100%;
-    height: auto;
+    max-height: 600px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 30px;
 }
 
@@ -263,6 +293,7 @@ form p
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
     height: 80%;
 }
@@ -270,6 +301,8 @@ form p
 #section2_article h2, #afficherplus
 {
     margin-left: 20px;
+    position: relative;
+    top: 10px;
 }
 
 
@@ -284,9 +317,14 @@ form p
     
 }
 
+.hebergement_element:hover
+{
+    box-shadow: 0px 0px 5px #acacad;
+}
+
 .hebergement_element a img
 {
-    height: 60%;
+    height: 65%;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -295,7 +333,6 @@ form p
 
 .hebergement_element_text
 {
-    height: 40%;
     font-size: 0.8em;
     margin-left: 10px;
     display: flex;
@@ -317,7 +354,6 @@ form p
 
 .hebergement_stars
 {
-    margin-bottom: 7px;
     font-size: 0.9em;
 }
 
@@ -386,6 +422,12 @@ aside
     box-shadow: 0px 0px 5px lightgrey;
 }
 
+.aside_element a:hover
+{
+    box-shadow: 0px 0px 5px #acacad;
+}
+
+
 aside img
 {
     width: 40%;
@@ -437,7 +479,7 @@ aside img
 
 #section3_activites
 {
-    height: 400px;
+    max-height: 400px;
     display: flex;
     justify-content: space-between;
 }
@@ -459,6 +501,11 @@ aside img
 {
     border-radius: 25px;
     box-shadow: 0px 0px 5px lightgrey;
+}
+
+.element_seul:hover
+{
+    box-shadow: 0px 0px 5px #acacad;
 }
 
 .element_seul img
@@ -484,6 +531,11 @@ aside img
     width: 100%;
     border-radius: 25px;
     box-shadow: 0px 0px 5px lightgrey;
+}
+
+.element_duo_individuel:hover
+{
+    box-shadow: 0px 0px 5px #acacad;
 }
 
 .element_duo_individuel a

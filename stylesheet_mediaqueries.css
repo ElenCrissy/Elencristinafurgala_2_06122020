@@ -1,6 +1,6 @@
 /* Mobile */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 576px)
 {
     
     body
@@ -13,6 +13,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
     
     /* Header */
@@ -23,7 +24,17 @@
     {
        height: 70px;
         margin-bottom: 30px;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+    
+    #logoreservia
+    {
+        margin-left: 30px;
+    }
+    
+    #actions
+    {
+        margin-right: 15px;
     }
     
     nav
@@ -57,7 +68,30 @@
     }
     
     
+    /* Section 1 */
     
+    #section1
+    {
+        margin-left: 15px;
+    }
+    
+    #filtres
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #filtres_categories
+    {
+        margin-top: 5%;
+
+    }
+    
+    .filtres_categories
+    {
+        margin-left: 0;
+        margin-right: 15px;
+    }
     
     
     
@@ -65,7 +99,7 @@
     
     #section2
     {
-        height: 1060px;
+        max-height: none;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -79,6 +113,67 @@
     #section2_article
     {
         background-color: white;
+        
+    }
+    
+    #section2_article_hebergement
+    {
+        margin-top: 30px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .hebergement_element
+    {
+        width: 90%;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+    
+    
+    /* Section 2 ----- Aside */
+    
+    .aside_element
+    {
+        height: 190px;
+    }
+    
+    
+    /* Section 3 */
+    
+    #section3_activites
+    {
+        width: 90%;
+        max-height: none;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #section3 h2
+    {
+        margin-left: 20px;
+    }
+    
+    .activites_element
+    {
+        width: 100%;
+    }
+    
+    .activites_element img
+    {
+        height: 80%;
+    }
+    
+    .element_seul ,.element_duo_individuel
+    {
+        height: 200px;
+        margin-bottom: 5%;
+    }
+    
+    #section3 h4
+    {
+        margin-top: 2%;
     }
     
     
@@ -91,12 +186,12 @@
     
     footer
     {
-        
         height: auto;
         padding-top: 20px;
         padding-bottom: 10px;
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
     }
     
     .footer_element
