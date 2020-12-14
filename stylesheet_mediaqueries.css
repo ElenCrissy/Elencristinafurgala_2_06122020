@@ -8,21 +8,17 @@
         width: 100%;
     }
     
-    #contenu
+    
+    
+    /* Header */
+    
+    header
     {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    
-    
-    
-    
-    
-    /* Header */
-    
-    header
     
     #header_largescreens
     {
@@ -75,7 +71,18 @@
     
     
     
-    /* Section 1 */
+    /* Main */
+        
+    main
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    
+    /* Main ----- Section 1 */
     
     #section1
     {
@@ -99,12 +106,9 @@
         margin-left: 0;
         margin-right: 15px;
     }
+
     
-    
-    
-    
-    
-    /* Section 2 */
+    /* Main ----- Section 2 */
     
     #section2
     {
@@ -120,8 +124,7 @@
     }
     
     
-    
-    /* Section 2 ----- Article */
+    /* Main ----- Section 2 -- Article */
     
     #section2_article
     {
@@ -144,8 +147,7 @@
     }
     
     
-    
-    /* Section 2 ----- Aside */
+    /* Main ----- Section 2 -- Aside */
     
     .aside_element
     {
@@ -153,10 +155,7 @@
     }
     
     
-    
-    
-    
-    /* Section 3 */
+    /* Main ----- Section 3 */
     
     #section3_activites
     {
@@ -195,8 +194,6 @@
     }
     
     
-
-    
     
     /* Footer */
     
@@ -231,7 +228,7 @@
 @media screen and (min-width: 577px) and (max-width: 922px)
 {
     
-    /* Section 2 */
+    /* Main ----- Section 2 */
     
     #section2
     {
@@ -240,9 +237,8 @@
         flex-direction: column-reverse;
     }
     
-    
-    
-    /* Section 2 ----- Article */
+
+    /* Main ----- Section 2 -- Article */
     
     #section2_article
     {
@@ -266,8 +262,7 @@
     }
     
     
-    
-    /* Section 2 ----- Aside */
+    /* Main ----- Section 2 -- Aside */
     
     aside
     {
@@ -307,10 +302,7 @@
     }
     
 
-    
-    
-    
-    /* Section 3 */
+    /* Main ----- Section 3 */
     
     #section3_activites
     {
@@ -342,9 +334,7 @@
     }
     
     
-    
-    
-    
+
     /* Footer */
     
     footer
