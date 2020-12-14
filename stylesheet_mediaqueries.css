@@ -16,6 +16,10 @@
         justify-content: space-between;
     }
     
+    
+    
+    
+    
     /* Header */
     
     header
@@ -68,6 +72,9 @@
     }
     
     
+    
+    
+    
     /* Section 1 */
     
     #section1
@@ -95,6 +102,8 @@
     
     
     
+    
+    
     /* Section 2 */
     
     #section2
@@ -109,6 +118,9 @@
         width: 100%;
         border-radius: 0;
     }
+    
+    
+    /* Section 2 ----- Article */
     
     #section2_article
     {
@@ -139,6 +151,9 @@
     }
     
     
+    
+    
+    
     /* Section 3 */
     
     #section3_activites
@@ -167,6 +182,7 @@
     
     .element_seul ,.element_duo_individuel
     {
+        width: 100%;
         height: 200px;
         margin-bottom: 5%;
     }
@@ -177,9 +193,7 @@
     }
     
     
-    
-    
-    
+
     
     
     /* Footer */
@@ -205,3 +219,161 @@
     
     
 }
+
+
+
+
+/* Tablette */
+
+@media screen and (min-width: 577px) and (max-width: 922px)
+{
+    
+    /* Section 2 */
+    
+    #section2
+    {
+        max-height: none;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    
+    /* Section 2 ----- Article */
+    
+    #section2_article
+    {
+        width: 100%;
+    }
+    
+    #section2_article_hebergement
+    {
+        margin-top: 30px;
+    }
+    
+    .hebergement_element
+    {
+        width: 45%;
+    }
+    
+    .hebergement_element img
+    {
+        width: 100%;
+        
+    }
+    
+    
+    /* Section 2 ----- Aside */
+    
+    aside
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    #populaire
+    {
+        justify-content: space-between;
+    }
+    
+    #populaire h2
+    {
+        margin-left: 20px;
+    }
+    
+    #populaire i
+    {
+        margin-right: 20px;
+    }
+    
+    #aside_group
+    {
+        flex-direction: row;
+    }
+    
+    .aside_element
+    {
+        width: 33%;
+        height: 100%;
+    }
+    
+    .aside_element img
+    {
+        height: 100%;
+    }
+    
+
+    
+    
+    
+    /* Section 3 */
+    
+    #section3_activites
+    {
+        max-height: 840px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .activites_element
+    {
+        height: 400px;
+        width: 33%;
+        margin-bottom: 5%;
+    }
+    
+    .activites_element:nth-child(even)
+    {
+        width: 55%;
+    }
+    
+    .element_seul, .element_duo
+    {
+        height: 400px;
+    }
+    
+    .activites_element h4
+    {
+        margin: 3% 0 2% 6%;
+    }
+    
+    
+    
+    
+    /* Footer */
+    
+    footer
+    {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .footer_element
+    {
+        width: 100%;
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

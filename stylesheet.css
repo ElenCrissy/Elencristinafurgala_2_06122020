@@ -200,6 +200,7 @@ form p
 
 #filtres_categories
 {
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -217,6 +218,11 @@ form p
     padding-right: 10px;
     font-weight: bold;
     font-size: 0.95em;
+}
+
+.filtres_categories:hover
+{
+    background-color: #F2F2F2;
 }
 
 .filtres_categories i
@@ -282,6 +288,11 @@ form p
 
 /* Section2 ----- Article */
 
+#section2 h2
+{
+    font-size: 1.5em;
+}
+
 #section2_article
 {
     width: 67%;
@@ -324,8 +335,8 @@ form p
 
 .hebergement_element a img
 {
-    height: 65%;
     width: 100%;
+    height: 65%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     object-fit: cover;
@@ -381,7 +392,6 @@ aside
 #populaire
 {
     display: flex;
-    align-items: left;
     justify-content: space-around;
     align-items: baseline;
 }
@@ -470,7 +480,7 @@ aside img
 
 
 
-/* Section3 */
+/* Section 3 */
 
 #section3
 {
@@ -494,7 +504,7 @@ aside img
 
 .activites_element h4
 {
-    margin: 5% 0 0 6%;
+    margin: 3% 0 2% 6%;
 }
 
 .element_seul
@@ -552,8 +562,6 @@ aside img
     border-top-right-radius: 25px;
     object-fit: cover;
 }
-
-
 
 
 
