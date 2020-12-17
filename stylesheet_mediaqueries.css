@@ -1,4 +1,4 @@
-/* Mobile */
+/* MOBILE */
 
 @media screen and (max-width: 576px)
 {
@@ -10,6 +10,8 @@
     
     
     
+
+    
     /* Header */
     
     header
@@ -20,7 +22,7 @@
         justify-content: space-between;
     }
     
-    #header_largescreens
+    #header_firstline
     {
        height: 70px;
         margin-bottom: 30px;
@@ -30,6 +32,8 @@
     #logoreservia
     {
         margin-left: 30px;
+        position: relative;
+        top: 15px;
     }
     
     #actions
@@ -88,17 +92,21 @@
     {
         margin-left: 15px;
     }
-    
+
+    .button
+    {
+        display: none;
+    }
+
+    .search_btn
+    {
+        display: block;
+    }
+
     #filtres
     {
         display: flex;
         flex-direction: column;
-    }
-    
-    #filtres_categories
-    {
-        margin-top: 5%;
-
     }
     
     .filtres_categories
@@ -106,6 +114,9 @@
         margin-left: 0;
         margin-right: 15px;
     }
+
+
+
 
     
     /* Main ----- Section 2 */
@@ -157,6 +168,11 @@
     
     /* Main ----- Section 3 */
     
+    #section3 h2
+    {
+        margin-left: 20px;
+    }
+
     #section3_activites
     {
         width: 90%;
@@ -164,11 +180,6 @@
         margin: auto;
         display: flex;
         flex-direction: column;
-    }
-    
-    #section3 h2
-    {
-        margin-left: 20px;
     }
     
     .activites_element
@@ -209,6 +220,7 @@
     
     .footer_element
     {
+        width: 50%;
         padding-top: 0px;
         padding-left: 20px;
         padding-bottom: 20px;
@@ -222,7 +234,11 @@
 
 
 
-/* Tablette */
+
+
+
+
+/* TABLETTE */
 
 @media screen and (min-width: 577px) and (max-width: 922px)
 {
