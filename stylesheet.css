@@ -208,7 +208,10 @@ button i
     color: white;
 }
 
-
+.button:focus, #location:focus
+{
+    outline: none;
+}
 
 
 /* Section1 ----- Filtre */
