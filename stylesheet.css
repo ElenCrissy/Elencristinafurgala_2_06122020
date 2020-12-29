@@ -42,28 +42,12 @@ a:hover
 header
 {
     width: 90%;
+    height: 100px;
     margin: auto;
     margin-bottom: 20px;
-}
-
-#header_firstline
-{
-    height: 100px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: 100%;
-}
-
-#nav_mobile
-{
-    display: none;
-}
-
-#actions
-{
-    display: flex;
-    flex-direction: row;
 }
 
 #logoreservia
@@ -73,10 +57,11 @@ header
 
 nav
 {
+    width: 80%;
     height: 50px;
-    margin-right: 20px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 nav a
@@ -100,7 +85,8 @@ nav a:hover
     font-weight: bold;
     color: #0065FC;
     display: flex;
-    align-items: center;
+    position: relative;
+    bottom: 15px;
 }
 
 
